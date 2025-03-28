@@ -1,0 +1,26 @@
+.footer {
+    background-color: #3BB273;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  .icon-heart {
+    font-size: 1.8rem;
+    color: #ccc; /* gris par défaut */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-heart:hover {
+    color: #ff7b7b; /* survol si non activé */
+  }
+  
+  .icon-heart.active {
+    color: #e74c3c; /* rouge si favori */
+  }
+  

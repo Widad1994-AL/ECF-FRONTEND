@@ -1,0 +1,268 @@
+/* Styles généraux pour le conteneur des recettes favorites */
+.favorite-recipes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Style du titre */
+  .favorite-recipes h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+  }
+  
+  /* Liste des recettes favorites */
+  .favorite-recipes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Style de chaque carte de recette */
+  .favorite-recipes li {
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Effet au survol de la carte */
+  .favorite-recipes li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style pour le titre de chaque recette */
+  .favorite-recipes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Style pour la description de la recette */
+  .favorite-recipes p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Style pour le bouton de suppression */
+  .favorite-recipes button {
+    background-color: #f27a1a; /* couleur inspirée de HelloFresh */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Effet au survol du bouton */
+  .favorite-recipes button:hover {
+    background-color: #d96716;
+  }
+  .favorites-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.favorites-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3BB273;
+}
+
+.no-favorites {
+  text-align: center;
+  color: #777;
+  font-size: 1.2rem;
+}
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive */
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.favorite-card {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.favorite-card:hover {
+  transform: scale(1.02);
+}
+
+.favorite-card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.favorite-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.favorite-card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.favorite-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipe-title {
+  font-size: 1.3rem;
+  color: #3BB273;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-description {
+  font-size: 0.95rem;
+  color: #555;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite-btn {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.favorite-btn:hover {
+  background-color: #e14c4c;
+}
+
+.category-tag {
+  background-color: #eafaf0;
+  color: #3BB273;
+  padding: 0.3rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
+}
+
+.favorites-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.favorites-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3BB273;
+}
+
+.no-favorites {
+  text-align: center;
+  color: #777;
+  font-size: 1.2rem;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.favorite-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.favorite-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipe-title {
+  font-size: 1.3rem;
+  color: #3BB273;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-description {
+  font-size: 0.95rem;
+  color: #555;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite-btn {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+
+.category-tag {
+  background-color: #eafaf0;
+  color: #3BB273;
+  padding: 0.3rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
+}

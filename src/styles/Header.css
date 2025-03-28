@@ -1,0 +1,81 @@
+.main-header {
+  background-image: url("../assets/heaser.avif");
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.header-content {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.header-content h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 768px) {
+  .main-header {
+    height: auto;
+  }
+
+  .overlay {
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+}
